@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/stories")
 public class StoryController {
 
-  @GetMapping
+  @GetMapping("/data.json")
   public Story getStories(){
 
     Story story = new Story();
