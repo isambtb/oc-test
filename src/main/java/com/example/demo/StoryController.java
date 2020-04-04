@@ -17,22 +17,22 @@ public class StoryController {
     Story story = new Story();
 
     StoryMainObject story1 = new StoryMainObject();
-    story1.setImage("https://imgshare.io/images/2020/04/04/jo7a.jpg");
+    story1.setImage("https://imgshare.io/images/2020/04/04/rabit.jpg");
     story1.setNumberOfReads(2);
-    story1.setTitle("title 1");
+    story1.setTitle("جحا و الأرنب");
     story1.setTimestamp(" 2hours");
 
 
     StoryMainObject story3 = new StoryMainObject();
     story3.setImage("https://imgshare.io/images/2020/04/04/jo7a.jpg");
     story3.setNumberOfReads(2);
-    story3.setTitle("title 1");
+    story3.setTitle(" جحا والحمار");
     story3.setTimestamp(" 2hours");
 
     StoryMainObject story2 = new StoryMainObject();
-    story2.setImage("https://imgshare.io/images/2020/04/04/jo7a.jpg");
+    story2.setImage("https://imgshare.io/images/2020/04/04/nail.jpg");
     story2.setNumberOfReads(2);
-    story2.setTitle("title 1");
+    story2.setTitle("مسمار جحا");
     story2.setTimestamp(" 2hours");
 
     story.getStory().add(story1);
