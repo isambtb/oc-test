@@ -35,9 +35,9 @@ public class StoryController {
     story2.setTitle("title 1");
     story2.setTimestamp(" 2hours");
 
-    story.getStories().add(story1);
-    story.getStories().add(story2);
-    story.getStories().add(story3);
+    story.getStory().add(story1);
+    story.getStory().add(story2);
+    story.getStory().add(story3);
 
     return story;
   }
@@ -50,17 +50,13 @@ public class StoryController {
       story = new HashSet<>();
     }
 
-    public Set<StoryMainObject> getStories() {
-      return story;
-    }
-
     @JsonProperty("story")
     public Set<StoryMainObject> getStory() {
       return story;
     }
 
-    public void setStories(Set<StoryMainObject> stories) {
-      this.story = stories;
+    public void setStories(Set<StoryMainObject> story) {
+      this.story = story;
     }
   }
 
