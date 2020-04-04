@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashSet;
 import java.util.Set;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,9 +43,19 @@ public class StoryController {
   }
 
   class Story {
-     Set<StoryMainObject> story = new HashSet<>();
+    @JsonProperty("story")
+    private Set<StoryMainObject> story;
+
+    Story() {
+      story = new HashSet<>();
+    }
 
     public Set<StoryMainObject> getStories() {
+      return story;
+    }
+
+    @JsonProperty("story")
+    public Set<StoryMainObject> getStory() {
       return story;
     }
 
